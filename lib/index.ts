@@ -17,6 +17,7 @@ for (const ip of hostIPList) {
 const server = serve({
     fetch: app.fetch,
     port,
+    hostname: '::',
 });
 
 export default server;
