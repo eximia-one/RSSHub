@@ -31,7 +31,7 @@
         "lint": "eslint --cache .",
         "prepare": "husky || true",
         "profiling": "cross-env NODE_ENV=production tsx --prof lib/index.ts",
-        "start": "sleep 5 cross-env NODE_ENV=production tsx lib/index.ts",
+        "start": "sleep 5 && cross-env NODE_ENV=production tsx lib/index.ts",
         "test": "npm run format:check && npm run vitest:coverage",
         "vitest": "cross-env NODE_ENV=test vitest",
         "vitest:coverage": "cross-env NODE_ENV=test vitest --coverage.enabled --reporter=junit",
